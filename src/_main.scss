@@ -1,9 +1,9 @@
-@import 'node_modules/elr-scss-functions/main';
+@import "node_modules/elr-scss-functions/src/main";
 
 @mixin elr-list-divider($config: ()) {
   $config: extend(
     (
-      border-color: #ccc
+      border-color: #ccc,
     ),
     $config
   );
@@ -29,7 +29,7 @@
 @mixin elr-border-list($config: ()) {
   $config: extend(
     (
-      border-color: #ccc
+      border-color: #ccc,
     ),
     $config
   );
@@ -73,8 +73,8 @@
 @mixin elr-bullet-list($config: ()) {
   $config: extend(
     (
-      icon: '\2705',
-      icon-font-size: 70%
+      icon: "\2705",
+      icon-font-size: 70%,
     ),
     $config
   );
@@ -102,7 +102,7 @@
   $config: extend(
     (
       icon-font-size: 14px,
-      icon-color: #1976d2
+      icon-color: #1976d2,
     ),
     $config
   );
