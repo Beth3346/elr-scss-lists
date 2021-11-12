@@ -1,0 +1,67 @@
+@import "src/main";
+@import "elr-scss-reset/src/main";
+
+@include elr-reset;
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.demo-content {
+  position: relative;
+  padding: 20px 0;
+}
+
+// ul,
+// ol {
+//   margin: 20px;
+//   width: 100%;
+// }
+
+.elr-unstyled-list {
+  @include elr-unstyled-list;
+}
+
+.elr-border-list {
+  @include elr-border-list;
+
+  li {
+    font-size: 14px;
+  }
+}
+
+.elr-inline-list {
+  @include elr-inline-list;
+  width: 100%;
+
+  li {
+    font-size: 14px;
+  }
+}
+
+.elr-bullet-list {
+  @include elr-bullet-list;
+}
+
+.elr-icon-list {
+  @include elr-icon-list;
+}
