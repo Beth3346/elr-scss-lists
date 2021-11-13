@@ -18,21 +18,43 @@ yarn add elr-scss-lists
 .unstyled-list {
   @include elr-unstyled-list;
 }
+```
 
+```scss
 .border-list {
-  @include elr-border-list;
+  @include elr-border-list(
+    $config: (
+      border-color: #333,
+    )
+  );
 }
+```
 
+```scss
 .inline-list {
   @include elr-inline-list;
 }
+```
 
+```scss
 .bullet-list {
-  @include elr-bullet-list;
+  @include elr-bullet-list(
+    $config: (
+      icon: "\2705",
+      icon-font-size: 70%,
+    )
+  );
 }
+```
 
+```scss
 .icon-list {
-  @include elr-icon-list;
+  @include elr-icon-list(
+    $config: (
+      icon-color: #1976d2,
+      icon-font-size: 70%,
+    )
+  );
 }
 ```
 
