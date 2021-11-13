@@ -14,6 +14,28 @@ npm install elr-scss-lists --save
 yarn add elr-scss-lists
 ```
 
+```scss
+.elr-unstyled-list {
+  @include elr-unstyled-list;
+}
+
+.elr-border-list {
+  @include elr-border-list;
+}
+
+.elr-inline-list {
+  @include elr-inline-list;
+}
+
+.elr-bullet-list {
+  @include elr-bullet-list;
+}
+
+.elr-icon-list {
+  @include elr-icon-list;
+}
+```
+
 ## License
 
 SEE LICENSE IN LICENSE.md
