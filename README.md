@@ -15,23 +15,23 @@ yarn add elr-scss-lists
 ```
 
 ```scss
-.elr-unstyled-list {
+.unstyled-list {
   @include elr-unstyled-list;
 }
 
-.elr-border-list {
+.border-list {
   @include elr-border-list;
 }
 
-.elr-inline-list {
+.inline-list {
   @include elr-inline-list;
 }
 
-.elr-bullet-list {
+.bullet-list {
   @include elr-bullet-list;
 }
 
-.elr-icon-list {
+.icon-list {
   @include elr-icon-list;
 }
 ```
