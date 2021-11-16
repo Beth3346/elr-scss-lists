@@ -1,20 +1,6 @@
 @import "elr-scss-functions/src/main";
 
-@mixin elr-list-divider($config: ()) {
-  $config: extend(
-    (
-      border-color: #ccc,
-    ),
-    $config
-  );
-
-  $border-color: map-get($config, border-color);
-
-  height: 1px;
-  padding: 0;
-  margin: 5px 0;
-  border-bottom: 1px solid $border-color;
-}
+// TODO: add tag list
 
 @mixin elr-unstyled-list() {
   list-style: none;
@@ -22,7 +8,10 @@
 
   li {
     list-style: none;
+    padding: 0;
     margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -36,18 +25,19 @@
 
   $border-color: map-get($config, border-color);
   padding: 0;
-  min-width: 200px;
+  // min-width: 200px;
 
   li {
     list-style: none;
-    padding: 5px;
+    padding: 4px 2px;
     border-bottom: 1px solid $border-color;
-    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
     margin-left: 0;
 
-    &:last-of-type {
-      border-bottom: 0;
-    }
+    // &:last-of-type {
+    //   border-bottom: 0;
+    // }
   }
 }
 
@@ -55,8 +45,8 @@
   padding: 0;
 
   li {
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 8px;
+    padding: 0;
   }
 
   li:first-of-type {
@@ -82,16 +72,19 @@
   $icon: map-get($config, icon);
   $icon-font-size: map-get($config, icon-font-size);
   padding-left: 0;
+  list-style-position: inside;
 
   li {
     margin-left: 0;
-    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0 8px;
     list-style: none;
 
     &:before {
       content: $icon;
       display: inline;
-      padding-right: 5px;
+      padding-right: 8px;
       font-size: $icon-font-size;
       vertical-align: middle;
     }
@@ -114,13 +107,15 @@
 
   li {
     margin-left: 0;
-    padding-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 16px;
     list-style: none;
 
     .elr-list-icon {
       font-size: $icon-font-size;
       color: $icon-color;
-      margin-right: 5px;
+      margin-right: 8px;
     }
   }
 }

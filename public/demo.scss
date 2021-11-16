@@ -23,8 +23,10 @@
 }
 
 .subheading {
-  font-size: 16px;
-  color: #666;
+  font-size: 24px;
+  font-weight: 900;
+  color: #1976d2;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 10px;
   width: 100%;
@@ -33,13 +35,12 @@
 .demo-content {
   position: relative;
   padding: 20px 0;
-}
 
-// ul,
-// ol {
-//   margin: 20px;
-//   width: 100%;
-// }
+  ul,
+  ol {
+    margin: 32px 0;
+  }
+}
 
 .elr-unstyled-list {
   @include elr-unstyled-list;
@@ -48,18 +49,18 @@
 .elr-border-list {
   @include elr-border-list;
 
-  li {
-    font-size: 14px;
-  }
+  // li {
+  //   font-size: 14px;
+  // }
 }
 
 .elr-inline-list {
   @include elr-inline-list;
-  width: 100%;
+  // width: 100%;
 
-  li {
-    font-size: 14px;
-  }
+  // li {
+  //   font-size: 14px;
+  // }
 }
 
 .elr-bullet-list {
